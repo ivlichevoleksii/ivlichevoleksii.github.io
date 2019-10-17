@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-image: url("bg.JPG");
+ 	background-attachment: fixed;
+  	background-size: 100%;
+}
+.header {
+	background-color: #fff;
+	text-align:center;
+	width:100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#container {
+	text-align:center;
+	padding: 0;
+	margin: 0;
+}
+.row {
+	display:inline-block;
+	width:100%;
+}
+.row img {
+	width:500px;
+	
+}
+.row p {
+	color: black;
+	font-size: 20pt;
+	font-weight:bold;
+}
+.column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+	color: brown;
+}
+.footer {
+	text-align:center;
+	width:100%;
+	font-size:26pt;
+	color:white;
+	font-weight:bold;
+}
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+.hide + label {
+	font-size:26pt;
+    border-bottom: 1px dotted brown;
+    padding: 0;
+    color: brown;
+    cursor: pointer;
+    display: inline-block; 
+}
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
+
+.demo {
+    margin: 5% 10%;
+}
+
+.gallery { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: stretch;
+  }
+.gallery img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
